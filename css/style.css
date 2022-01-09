@@ -624,10 +624,10 @@ ul.list-check li::before {
     background: transparent;
 }
 
-
 .resume-title h3{
     text-align: center;
 }
+
 .resume-section > div > div{
     margin-bottom: 60px;
 }
@@ -776,8 +776,8 @@ ul.list-check li::before {
 }
 .timeline-heading span{
     display: block;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-weight: 100;
+    margin-bottom: 1px;
 }
 
 
