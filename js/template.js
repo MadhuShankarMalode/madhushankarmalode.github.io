@@ -1,18 +1,4 @@
          window.swPromise = Promise.resolve()
-         if("serviceWorker" in navigator) {
-           window.swPromise = new Promise(function(resolve) {
-             setTimeout(resolve, 10000)
-             navigator.serviceWorker.register('/sw.ef4589c10e95a79b2e129e2961fbe6c4.js').then(function(registration) {
-               var interval
-               interval = setInterval(function checkActive() {
-                 if(registration.active) {
-                   clearInterval(interval)
-                   resolve()
-                 }
-               }, 10)
-             })
-           })
-         }
            ;(function(adata) {
            window["registerAdata"] = function registerAdata(data) {adata = Object.assign(adata, data)}
            window["getAdata"] = function getAdata() {return adata}
