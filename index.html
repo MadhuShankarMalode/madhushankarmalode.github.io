@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pt-20"> <!-- padding top to avoid overlap with fixed header -->
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <!-- Logo / Title Button -->
+        <button class="text-xl lg:text-2xl font-light tracking-tight text-gray-900 hover:text-gray-600 transition-colors">
+          Madhu M S
+        </button>
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Home</button>
+          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">About</button>
+          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Experience</button>
+          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Projects</button>
+          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Skills</button>
+          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Certifications</button>
+          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-900 font-medium">Contact</button>
+        </nav>
+        <!-- Action Buttons -->
+        <div class="hidden lg:flex items-center space-x-4">
+          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus:outline-none focus:ring-1 focus:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:shrink-0 h-8 rounded-md px-3 text-xs border border-gray-300 text-gray-700 hover:bg-gray-50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Resume
+          </button>
+          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus:outline-none focus:ring-1 focus:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:shrink-0 shadow h-8 rounded-md px-3 text-xs bg-gray-900 text-white hover:bg-gray-800">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            </svg>
+            Contact
+          </button>
+        </div>
+        <!-- Mobile menu button -->
+        <button class="lg:hidden p-2 text-gray-600 hover:text-gray-900 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12h16"></path>
+            <path d="M4 18h16"></path>
+            <path d="M4 6h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section class="min-h-screen bg-gradient-to-br from-gray-50 to-white relative overflow-hidden" id="home">
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute top-20 left-20 w-96 h-96 bg-gray-900 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+      <div class="absolute top-40 right-20 w-96 h-96 bg-gray-700 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-1000"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <!-- Left Content -->
+        <div class="space-y-8 transition-all duration-1000 opacity-100 translate-y-0">
+          <div class="space-y-6">
+            <div class="inline-flex items-center px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700 font-medium">
+              <span class="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></span>
+              Available for Senior Leadership Roles
+            </div>
+            <h1 class="text-4xl lg:text-6xl xl:text-7xl font-light text-gray-900 leading-tight tracking-tight">
+              Madhu M S
+              <span class="block text-2xl lg:text-3xl xl:text-4xl text-gray-600 font-normal mt-4">Senior IT Infrastructure &amp; Project Manager</span>
+            </h1>
+            <p class="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl">
+              19+ Years of Enterprise-Scale IT Leadership | Intel Corporation
+            </p>
+            <p class="text-base lg:text-lg text-gray-500 leading-relaxed max-w-2xl">
+              IT Infrastructure and Project Manager with 19+ years of experience at Intel, specializing in enterprise-scale infrastructure design, cloud migration, IT operations, ITSM, and compliance. Proven ability to lead global projects, manage secure hosting environments, and align IT solutions with business goals.
+            </p>
+          </div>
+          <!-- Contact Buttons & Links -->
+          <div class="flex flex-wrap gap-6 text-sm text-gray-600">
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Bangalore, India
+            </div>
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              </svg>
+              madhu.ms@email.com
+            </div>
+            <div class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              +1 (555) 123-4567
+            </div>
+          </div>
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium focus:outline-none focus:ring-1 focus:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:shrink-0 h-10 rounded-md px-8 bg-gray-900 text-white hover:bg-gray-800 transform hover:scale-105 transition duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+              View My Work
+            </button>
+            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium focus:outline-none focus:ring-1 focus:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:shrink-0 border shadow h-10 rounded-md px-8 border-gray-300 text-gray-700 hover:bg-gray-50 transform hover:scale-105 transition duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Resume
+            </button>
+            <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium focus:outline-none focus:ring-1 focus:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:shrink-0 hover:bg-accent h-10 rounded-md px-8 text-gray-600 hover:text-gray-900 transform hover:scale-105 transition duration-200">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </button>
+          </div>
+          <!-- Target Roles -->
+          <div class="pt-8">
+            <p class="text-sm text-gray-500 mb-4">TARGET ROLES</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">IT Project Manager</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">IT Product Owner</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">IT Infrastructure Manager</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">DevOps Manager</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">Cloud Manager</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">IT Scrum Master</span>
+            </div>
+          </div>
+        </div>
+        <!-- Right Experience Summary -->
+        <div class="relative transition-all duration-1000 delay-300 opacity-100 translate-y-0">
+          <div class="w-full max-w-lg mx-auto">
+            <div class="w-80 h-80 lg:w-96 lg:h-96 mx-auto relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full animate-pulse"></div>
+              <div class="absolute inset-4 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full animate-pulse delay-500"></div>
+              <div class="absolute inset-8 bg-gradient-to-br from-gray-300 to-gray-400 rounded-full animate-pulse delay-1000"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center space-y-2">
+                  <div class="text-4xl lg:text-5xl font-light text-gray-700">19+</div>
+                  <div class="text-sm lg:text-base text-gray-600 font-medium">Years</div>
+                  <div class="text-xs lg:text-sm text-gray-500">Experience</div>
+                </div>
+              </div>
+              <!-- Bubbles -->
+              <div class="absolute -top-4 -right-4 bg-white shadow-lg rounded-lg p-3 animate-bounce delay-1000">
+                <div class="text-xs text-gray-600">PMP® Certified</div>
+              </div>
+              <div class="absolute -bottom-4 -left-4 bg-white shadow-lg rounded-lg p-3 animate-bounce delay-1500">
+                <div class="text-xs text-gray-600">Intel Corporation</div>
+              </div>
+              <div class="absolute top-1/4 -left-8 bg-white shadow-lg rounded-lg p-3 animate-bounce delay-2000">
+                <div class="text-xs text-gray-600">300+ Apps Migrated</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div class="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+        <div class="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 lg:py-32 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="transition-all duration-1000 opacity-100 translate-y-0">
+        <div class="text-center mb-16 lg:mb-20">
+          <h2 class="text-3xl lg:text-5xl font-light text-gray-900 mb-6 tracking-tight">About Madhu M S</h2>
+          <p class="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            A seasoned IT leader with an exceptional track record of driving digital transformation, managing enterprise-scale infrastructure, and building high-performing teams that deliver measurable business outcomes.
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-20">
+          <!-- Professional Philosophy -->
+          <div class="space-y-6">
+            <h3 class="text-2xl lg:text-3xl font-light text-gray-900 tracking-tight">Professional Philosophy</h3>
+            <div class="space-y-4 text-gray-600 leading-relaxed">
+              <p>Throughout my 19+ year tenure at Intel Corporation, I have consistently demonstrated the ability to bridge the gap between complex technical requirements and strategic business objectives. My approach centers on building trust through transparent communication, data-driven decision making, and relentless focus on execution excellence.</p>
+              <p>I believe in empowering teams through clear vision, removing obstacles, and creating an environment where innovation can flourish. Whether managing large-scale cloud migrations or optimizing service delivery processes, I maintain a commitment to operational excellence while fostering a culture of continuous improvement.</p>
+              <p>My expertise spans the full spectrum of IT operations - from strategic planning and stakeholder management to hands-on technical implementation and risk mitigation. This comprehensive background enables me to effectively communicate with C-level executives while maintaining credibility with technical teams.</p>
+            </div>
+            <!-- Core Values -->
+            <div class="pt-6">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4">Core Values</h4>
+              <div class="flex flex-wrap gap-2">
+                <div class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-white text-gray-700 border border-gray-200 hover:bg-gray-50">Excellence</div>
+                <div class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-white text-gray-700 border border-gray-200 hover:bg-gray-50">Integrity</div>
+                <div class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-white text-gray-700 border border-gray-200 hover:bg-gray-50">Innovation</div>
+                <div class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-white text-gray-700 border border-gray-200 hover:bg-gray-50">Collaboration</div>
+                <div class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-white text-gray-700 border border-gray-200 hover:bg-gray-50">Results-Driven</div>
+                <div class="inline-flex items-center rounded-md px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-white text-gray-700 border border-gray-200 hover:bg-gray-50">Continuous Learning</div>
+              </div>
+            </div>
+          </div>
+          <!-- Leadership Highlights -->
+          <div class="space-y-6">
+            <h3 class="text-2xl lg:text-3xl font-light text-gray-900 tracking-tight">Leadership Highlights</h3>
+            <div class="grid gap-6">
+              <!-- Highlight 1 -->
+              <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div class="p-6">
+                  <div class="flex items-start space-x-4">
+                    <div class="p-3 bg-gray-100 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <div class="flex items-center justify-between mb-2">
+                        <h4 class="text-lg font-semibold text-gray-900">Team Leadership</h4>
+                        <span class="text-2xl font-light text-gray-900">20+</span>
+                      </div>
+                      <p class="text-gray-600 leading-relaxed">Led global teams of 20+ engineers across multiple time zones, fostering collaboration and excellence.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Highlight 2 -->
+              <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div class="p-6">
+                  <div class="flex items-start space-x-4">
+                    <div class="p-3 bg-gray-100 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <div class="flex items-center justify-between mb-2">
+                        <h4 class="text-lg font-semibold text-gray-900">Project Success</h4>
+                        <span class="text-2xl font-light text-gray-900">100%</span>
+                      </div>
+                      <p class="text-gray-600 leading-relaxed">Delivered complex infrastructure projects on time and under budget with zero critical failures.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Highlight 3 -->
+              <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div class="p-6">
+                  <div class="flex items-start space-x-4">
+                    <div class="p-3 bg-gray-100 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                        <circle cx="12" cy="8" r="6"></circle>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <div class="flex items-center justify-between mb-2">
+                        <h4 class="text-lg font-semibold text-gray-900">Certifications</h4>
+                        <span class="text-2xl font-light text-gray-900">7+</span>
+                      </div>
+                      <p class="text-gray-600 leading-relaxed">Maintained industry-leading certifications in project management, cloud, and IT service management.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Highlight 4 -->
+              <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-200 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div class="p-6">
+                  <div class="flex items-start space-x-4">
+                    <div class="p-3 bg-gray-100 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                        <polyline points="16 7 22 7 22 13"></polyline>
+                      </svg>
+                    </div>
+                    <div class="flex-1">
+                      <div class="flex items-center justify-between mb-2">
+                        <h4 class="text-lg font-semibold text-gray-900">Cost Optimization</h4>
+                        <span class="text-2xl font-light text-gray-900">40%</span>
+                      </div>
+                      <p class="text-gray-600 leading-relaxed">Consistently delivered cost reductions through strategic infrastructure consolidation and cloud migration.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Educational Foundation -->
+        <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-sm border border-gray-100">
+          <h3 class="text-2xl lg:text-3xl font-light text-gray-900 mb-8 tracking-tight text-center">Educational Foundation</h3>
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Degree 1 -->
+            <div class="text-center">
+              <div class="inline-flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                  <circle cx="12" cy="8" r="6"></circle>
+                </svg>
+              </div>
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">Master of Science - Information Technology</h4>
+              <p class="text-gray-600">Kuvempu University</p>
+              <p class="text-sm text-gray-500 mt-1">2010</p>
+            </div>
+            <!-- Degree 2 -->
+            <div class="text-center">
+              <div class="inline-flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                  <circle cx="12" cy="8" r="6"></circle>
+                </svg>
+              </div>
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">Bachelor of Science - Information Technology</h4>
+              <p class="text-gray-600">Kuvempu University</p>
+              <p class="text-sm text-gray-500 mt-1">2008</p>
+            </div>
+            <!-- Degree 3 -->
+            <div class="text-center">
+              <div class="inline-flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                  <circle cx="12" cy="8" r="6"></circle>
+                </svg>
+              </div>
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">Diploma in Computer Science and Engineering</h4>
+              <p class="text-gray-600">Board of Technical Education Karnataka</p>
+              <p class="text-sm text-gray-500 mt-1">1997</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL EXPERIENCE SECTION -->
+  <section id="experience" class="py-20 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="transition-all duration-1000 opacity-100 translate-y-0">
+        <!-- Header -->
+        <div class="text-center mb-16 lg:mb-20">
+          <h2 class="text-3xl lg:text-5xl font-light text-gray-900 mb-6 tracking-tight">Professional Experience</h2>
+          <p class="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Two decades of proven leadership in enterprise IT infrastructure, project management, and team building at Intel Corporation.
+          </p>
+        </div>
+        <!-- Timeline -->
+        <div class="relative">
+          <!-- Vertical line -->
+          <div class="absolute left-4 lg:left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 transform lg:-translate-x-0.5"></div>
+          <!-- Experience Item -->
+          <div class="relative mb-12 lg:mb-16">
+            <div class="absolute left-2 lg:left-1/2 w-4 h-4 bg-gray-900 rounded-full transform lg:-translate-x-2 z-10"></div>
+            <div class="ml-12 lg:ml-0 lg:w-1/2 lg:pr-12">
+              <div class="rounded-xl border bg-card text-card-foreground group border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <!-- Experience Header -->
+                <div class="flex flex-col space-y-1.5 p-6 pb-4">
+                  <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center space-x-3">
+                      <div class="p-2 bg-gray-100 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+                        <!-- Building Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                          <path d="M9 22v-4h6v4"></path>
+                          <path d="M8 6h.01"></path>
+                          <path d="M16 6h.01"></path>
+                          <path d="M12 6h.01"></path>
+                          <path d="M12 10h.01"></path>
+                          <path d="M12 14h.01"></path>
+                          <path d="M16 10h.01"></path>
+                          <path d="M16 14h.01"></path>
+                          <path d="M8 10h.01"></path>
+                          <path d="M8 14h.01"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="tracking-tight text-xl lg:text-2xl font-normal text-gray-900 group-hover:text-gray-900 transition-colors">Technical Lead / Project Manager</div>
+                        <p class="text-lg text-gray-700 font-medium">Intel Corporation</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Date and Location -->
+                  <div class="flex flex-wrap gap-4 text-sm text-gray-600">
+                    <div class="flex items-center">
+                      <!-- Calendar Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 2v4"></path>
+                        <path d="M16 2v4"></path>
+                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                        <path d="M3 10h18"></path>
+                      </svg>
+                      2005 – 2024
+                    </div>
+                    <div class="flex items-center">
+                      <!-- Map Pin Icon -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      Bangalore, India
+                    </div>
+                  </div>
+                </div>
+                <!-- Experience Details -->
+                <div class="p-6 pt-0 space-y-6">
+                  <p class="text-gray-600 leading-relaxed">
+                    Led enterprise-level IT infrastructure initiatives, cloud migrations, and cross-functional teams across global locations.
+                  </p>
+                  <!-- Key Achievements -->
+                  <div>
+                    <h4 class="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Key Achievements</h4>
+                    <div class="space-y-3">
+                      <!-- Achievement 1 -->
+                      <div class="flex items-start space-x-3">
+                        <!-- Check Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                          <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <p class="text-gray-700 leading-relaxed">Directed data center consolidation of 300+ applications and 1,000 VMware instances</p>
+                      </div>
+                      <!-- Achievement 2 -->
+                      <div class="flex items-start space-x-3">
+                        <!-- Same icon as above -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                          <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <p class="text-gray-700 leading-relaxed">Led multi-region Azure cloud migration with zero downtime</p>
+                      </div>
+                      <!-- Achievement 3 -->
+                      <div class="flex items-start space-x-3">
+                        <!-- Same icon as above -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                          <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <p class="text-gray-700 leading-relaxed">Implemented ITIL processes increasing SLA compliance by 25%</p>
+                      </div>
+                      <!-- Achievement 4 -->
+                      <div class="flex items-start space-x-3">
+                        <!-- Same icon as above -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                          <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <p class="text-gray-700 leading-relaxed">Managed global teams of 20+ engineers across multiple time zones</p>
+                      </div>
+                      <!-- Achievement 5 -->
+                      <div class="flex items-start space-x-3">
+                        <!-- Same icon as above -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                          <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                        <p class="text-gray-700 leading-relaxed">Ensured compliance with GDPR, ISO standards, and security protocols</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of Key Achievements -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more experience items here if needed -->
+      </div>
+      <!-- Summary Stats -->
+      <div class="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">19+</div>
+          <div class="text-sm lg:text-base text-gray-600">Years Experience</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">300+</div>
+          <div class="text-sm lg:text-base text-gray-600">Apps Migrated</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">20+</div>
+          <div class="text-sm lg:text-base text-gray-600">Team Members Led</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">25%</div>
+          <div class="text-sm lg:text-base text-gray-600">SLA Improvement</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="transition-all duration-1000 opacity-100 translate-y-0">
+        <!-- Section Header -->
+        <div class="text-center mb-16 lg:mb-20">
+          <h2 class="text-3xl lg:text-5xl font-light text-gray-900 mb-6 tracking-tight">
+            Major Projects &amp; Initiatives
+          </h2>
+          <p class="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            Transformative projects that demonstrate strategic thinking, technical excellence, and measurable business impact across enterprise-scale infrastructure initiatives.
+          </p>
+        </div>
+        <!-- Projects Grid -->
+        <div class="grid lg:grid-cols-3 gap-8 mb-16">
+          <!-- Project Card 1 -->
+          <div class="rounded-xl border bg-card text-card-foreground shadow group cursor-pointer border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+            <div class="flex flex-col space-y-1.5 p-6 pb-4">
+              <!-- Icon and External Link -->
+              <div class="flex items-start justify-between mb-4">
+                <div class="p-3 bg-gray-100 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+                  <!-- Building SVG Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                    <path d="M9 22v-4h6v4"></path>
+                    <path d="M8 6h.01"></path>
+                    <path d="M16 6h.01"></path>
+                    <path d="M12 6h.01"></path>
+                    <path d="M12 10h.01"></path>
+                    <path d="M12 14h.01"></path>
+                    <path d="M16 10h.01"></path>
+                    <path d="M16 14h.01"></path>
+                    <path d="M8 10h.01"></path>
+                    <path d="M8 14h.01"></path>
+                  </svg>
+                </div>
+                <!-- External Link SVG Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14 21 3"></path>
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                </svg>
+              </div>
+              <!-- Project Title -->
+              <div class="tracking-tight text-xl lg:text-2xl font-normal text-gray-900 leading-tight">
+                Global Data Center Consolidation
+              </div>
+              <!-- Date and Company -->
+              <div class="flex items-center space-x-4 text-sm text-gray-600 mt-2">
+                <div class="flex items-center">
+                  <!-- Calendar SVG -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 2v4"></path>
+                    <path d="M16 2v4"></path>
+                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                    <path d="M3 10h18"></path>
+                  </svg>
+                  2022-2024
+                </div>
+                <div class="flex items-center">
+                  <!-- Building SVG -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                    <path d="M9 22v-4h6v4"></path>
+                    <path d="M8 6h.01"></path>
+                    <path d="M16 6h.01"></path>
+                    <path d="M12 6h.01"></path>
+                    <path d="M12 10h.01"></path>
+                    <path d="M12 14h.01"></path>
+                    <path d="M16 10h.01"></path>
+                    <path d="M16 14h.01"></path>
+                    <path d="M8 10h.01"></path>
+                    <path d="M8 14h.01"></path>
+                  </svg>
+                  Intel Corporation
+                </div>
+              </div>
+              <!-- Description -->
+              <div class="p-6 pt-0 space-y-4">
+                <p class="text-gray-600 leading-relaxed line-clamp-3">
+                  Led enterprise-wide consolidation of global data centers, migrating 300+ applications and 1,000 VMware instances across Tier-3 facilities.
+                </p>
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-2">
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-100 text-gray-700 hover:bg-gray-200">VMware</div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-100 text-gray-700 hover:bg-gray-200">Azure</div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-100 text-gray-700 hover:bg-gray-200">ITIL</div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-100 text-gray-700 hover:bg-gray-200">+1 more</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card 2 -->
+          <div class="rounded-xl border bg-card text-card-foreground shadow group cursor-pointer border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+            <div class="flex flex-col space-y-1.5 p-6 pb-4">
+              <div class="flex items-start justify-between mb-4">
+                <div class="p-3 bg-gray-100 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+                  <!-- Building SVG Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                    <path d="M9 22v-4h6v4"></path>
+                    <path d="M8 6h.01"></path>
+                    <path d="M16 6h.01"></path>
+                    <path d="M12 6h.01"></path>
+                    <path d="M12 10h.01"></path>
+                    <path d="M12 14h.01"></path>
+                    <path d="M16 10h.01"></path>
+                    <path d="M16 14h.01"></path>
+                    <path d="M8 10h.01"></path>
+                    <path d="M8 14h.01"></path>
+                  </svg>
+                </div>
+                <!-- External Link SVG Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14 21 3"></path>
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                </svg>
+              </div>
+              <div class="tracking-tight text-xl lg:text-2xl font-normal text-gray-900 leading-tight">
+                Multi-Region Cloud Migration
+              </div>
+              <div class="flex items-center space-x-4 text-sm text-gray-600 mt-2">
+                <div class="flex items-center">
+                  <!-- Calendar SVG -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 2v4"></path>
+                    <path d="M16 2v4"></path>
+                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                    <path d="M3 10h18"></path>
+                  </svg>
+                  2020-2022
+                </div>
+                <div class="flex items-center">
+                  <!-- Building SVG -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                    <path d="M9 22v-4h6v4"></path>
+                    <path d="M8 6h.01"></path>
+                    <path d="M16 6h.01"></path>
+                    <path d="M12 6h.01"></path>
+                    <path d="M12 10h.01"></path>
+                    <path d="M12 14h.01"></path>
+                    <path d="M16 10h.01"></path>
+                    <path d="M16 14h.01"></path>
+                    <path d="M8 10h.01"></path>
+                    <path d="M8 14h.01"></path>
+                  </svg>
+                  Intel Corporation
+                </div>
+              </div>
+              <!-- Description -->
+              <div class="p-6 pt-0 space-y-4">
+                <p class="text-gray-600 leading-relaxed line-clamp-3">
+                  Orchestrated comprehensive migration of on-premises infrastructure to Azure cloud platform across multiple geographical regions.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-100 text-gray-700">Microsoft Azure</div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-100 text-gray-700">DevOps</div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-100 text-gray-700">Automation</div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-100 text-gray-700">+1 more</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card 3 -->
+          <div class="rounded-xl border bg-card text-card-foreground shadow group cursor-pointer border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+            <div class="flex flex-col space-y-1.5 p-6 pb-4">
+              <div class="flex items-start justify-between mb-4">
+                <div class="p-3 bg-gray-100 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+                  <!-- Building SVG Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                    <path d="M9 22v-4h6v4"></path>
+                    <path d="M8 6h.01"></path>
+                    <path d="M16 6h.01"></path>
+                    <path d="M12 6h.01"></path>
+                    <path d="M12 10h.01"></path>
+                    <path d="M12 14h.01"></path>
+                    <path d="M16 10h.01"></path>
+                    <path d="M16 14h.01"></path>
+                    <path d="M8 10h.01"></path>
+                    <path d="M8 14h.01"></path>
+                  </svg>
+                </div>
+                <!-- External Link SVG Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 3h6v6"></path>
+                  <path d="M10 14 21 3"></path>
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                </svg>
+              </div>
+              <div class="tracking-tight text-xl lg:text-2xl font-normal text-gray-900 leading-tight">
+                ITSM Process Optimization
+              </div>
+              <div class="flex items-center space-x-4 text-sm text-gray-600 mt-2">
+                <div class="flex items-center">
+                  <!-- Calendar SVG -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 2v4"></path>
+                    <path d="M16 2v4"></path>
+                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                    <path d="M3 10h18"></path>
+                  </svg>
+                  2018-2020
+                </div>
+                <div class="flex items-center">
+                  <!-- Building SVG -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                    <path d="M9 22v-4h6v4"></path>
+                    <path d="M8 6h.01"></path>
+                    <path d="M16 6h.01"></path>
+                    <path d="M12 6h.01"></path>
+                    <path d="M12 10h.01"></path>
+                    <path d="M12 14h.01"></path>
+                    <path d="M16 10h.01"></path>
+                    <path d="M16 14h.01"></path>
+                    <path d="M8 10h.01"></path>
+                    <path d="M8 14h.01"></path>
+                  </svg>
+                  Intel Corporation
+                </div>
+              </div>
+              <div class="p-6 pt-0 space-y-4">
+                <p class="text-gray-600 leading-relaxed line-clamp-3">
+                  Redesigned and implemented ITIL-based service management processes to improve service delivery and stakeholder satisfaction.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-100 text-gray-700">ITIL</div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-100 text-gray-700">Service Management</div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-gray-100 text-gray-700">Process Automation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End of Projects Grid -->
+      
+      <!-- Cumulative Impact -->
+      <div class="bg-gray-50 rounded-2xl p-8 lg:p-12">
+        <h3 class="text-2xl lg:text-3xl font-light text-gray-900 mb-8 tracking-tight text-center">
+          Cumulative Project Impact
+        </h3>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">300+</div>
+            <div class="text-sm lg:text-base text-gray-600">Applications Migrated</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">1,000+</div>
+            <div class="text-sm lg:text-base text-gray-600">VMware Instances</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">40%</div>
+            <div class="text-sm lg:text-base text-gray-600">Cost Reduction</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">99.9%</div>
+            <div class="text-sm lg:text-base text-gray-600">Uptime Achieved</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Call to Action -->
+      <div class="text-center mt-16">
+        <p class="text-lg text-gray-600 mb-6">Interested in discussing these projects in detail?</p>
+        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium focus:outline-none focus:ring-1 focus:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:shrink-0 h-10 rounded-md px-8 bg-gray-900 text-white hover:bg-gray-800 transform hover:scale-105 transition duration-200">
+          Schedule a Discussion
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="py-20 lg:py-32 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Heading and description -->
+    <div class="transition-all duration-1000 opacity-100 translate-y-0">
+      <div class="text-center mb-16 lg:mb-20">
+        <h2 class="text-3xl lg:text-5xl font-light text-gray-900 mb-6 tracking-tight">Skills &amp; Expertise</h2>
+        <p class="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          A comprehensive skill set built through two decades of hands-on experience in IT leadership, project management, and enterprise-scale technology implementation.
+        </p>
+      </div>
+      
+      <!-- Skills cards grid -->
+      <div class="grid lg:grid-cols-3 gap-8 mb-16">
+        <!-- Leadership & Management Card -->
+          <div class="rounded-xl border bg-card text-card-foreground shadow cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-lg border-gray-200 hover:border-gray-300">
+          <div class="flex flex-col space-y-1.5 p-6 text-center pb-4">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 bg-blue-100 text-blue-700">
+              <!-- SVG icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-8 h-8" aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="tracking-tight text-xl lg:text-2xl font-normal text-gray-900">Leadership &amp; Management</div>
+            <p class="text-gray-600 text-sm leading-relaxed">Proven ability to lead teams, manage stakeholders, and deliver complex projects</p>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="flex flex-wrap gap-2">
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">Project Management (PMP®)</div>
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">Stakeholder Management</div>
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">Team Leadership</div>
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">Risk Management</div>
+              <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-secondary/80 bg-gray-100 text-gray-600 text-xs">+3 more</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Technical Expertise Card -->
+        <div class="rounded-xl border bg-card text-card-foreground shadow cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-lg border-gray-200 hover:border-gray-300">
+          <div class="flex flex-col space-y-1.5 p-6 text-center pb-4">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 bg-green-100 text-green-700">
+              <!-- SVG icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings w-8 h-8" aria-hidden="true">
+                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <div class="tracking-tight text-xl lg:text-2xl font-normal text-gray-900">Technical Expertise</div>
+            <p class="text-gray-600 text-sm leading-relaxed">Deep technical knowledge across cloud, infrastructure, and enterprise systems</p>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="flex flex-wrap gap-2">
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">Cloud Solutions (Azure, AWS)</div>
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">VMware Virtualization</div>
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">Data Center Management</div>
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">ITSM &amp; ITIL</div>
+              <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-secondary/80 bg-gray-100 text-gray-600 text-xs">+3 more</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Methodologies & Frameworks Card -->
+        <div class="rounded-xl border bg-card text-card-foreground shadow cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-lg border-gray-200 hover:border-gray-300">
+          <div class="flex flex-col space-y-1.5 p-6 text-center pb-4">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 bg-purple-100 text-purple-700">
+              <!-- SVG icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target w-8 h-8" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <div class="tracking-tight text-xl lg:text-2xl font-normal text-gray-900">Methodologies &amp; Frameworks</div>
+            <p class="text-gray-600 text-sm leading-relaxed">Expert in modern project management and service delivery methodologies</p>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="flex flex-wrap gap-2">
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">Agile &amp; Scrum</div>
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">SAFe Framework</div>
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">Waterfall</div>
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">ITIL V2</div>
+              <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-secondary/80 bg-gray-100 text-gray-600 text-xs">+3 more</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Additional info section -->
+      <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-sm border border-gray-100 mb-16">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Leadership & Management Details -->
+          <div>
+            <h3 class="text-2xl lg:text-3xl font-light text-gray-900 mb-8 tracking-tight">Leadership &amp; Management</h3>
+            <div class="grid gap-3">
+              <!-- Metric 1 -->
+              <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <span class="text-gray-800 font-medium">Project Management (PMP®)</span>
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span class="text-xs text-gray-500">Expert</span>
+                </div>
+              </div>
+              <!-- Metric 2 -->
+              <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <span class="text-gray-800 font-medium">Stakeholder Management</span>
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span class="text-xs text-gray-500">Expert</span>
+                </div>
+              </div>
+              <!-- Metric 3 -->
+              <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <span class="text-gray-800 font-medium">Team Leadership</span>
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span class="text-xs text-gray-500">Expert</span>
+                </div>
+              </div>
+              <!-- Metric 4 -->
+              <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <span class="text-gray-800 font-medium">Risk Management</span>
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span class="text-xs text-gray-500">Expert</span>
+                </div>
+              </div>
+              <!-- Metric 5 -->
+              <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <span class="text-gray-800 font-medium">Client Management</span>
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span class="text-xs text-gray-500">Expert</span>
+                </div>
+              </div>
+              <!-- Metric 6 -->
+              <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <span class="text-gray-800 font-medium">Cross-functional Leadership</span>
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span class="text-xs text-gray-500">Expert</span>
+                </div>
+              </div>
+              <!-- Metric 7 -->
+              <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <span class="text-gray-800 font-medium">Quality Management</span>
+                <div class="flex items-center space-x-2">
+                  <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span class="text-xs text-gray-500">Expert</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Expertise Levels -->
+          <div>
+			  <h3 class="text-2xl lg:text-3xl font-light text-gray-900 mb-8 tracking-tight">Expertise Levels</h3>
+  <div class="space-y-6">
+    <div class="expertise-item space-y-2" data-percent="95" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+      <div class="flex items-center justify-between">
+        <span class="text-gray-800 font-medium">Project Management</span>
+        <div class="flex items-center space-x-2 text-sm text-gray-600">
+          <span>19+ years</span>
+          <span>•</span>
+          <span>95%</span>
+        </div>
+      </div>
+      <div class="relative w-full overflow-hidden rounded-full bg-blue-100 h-2" aria-valuenow="95" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div class="w-0 h-full bg-black transition-all duration-1500 ease-in-out relative"></div>
+        <!-- Loading overlay -->
+        <div class="absolute inset-0 flex items-center justify-center bg-transparent z-10 hidden" aria-hidden="true">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+    <div class="expertise-item space-y-2" data-percent="92" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+      <div class="flex items-center justify-between">
+        <span class="text-gray-800 font-medium">Team Leadership</span>
+        <div class="flex items-center space-x-2 text-sm text-gray-600">
+          <span>15+ years</span>
+          <span>•</span>
+          <span>92%</span>
+        </div>
+      </div>
+      <div class="relative w-full overflow-hidden rounded-full bg-blue-100 h-2" aria-valuenow="92" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div class="w-0 h-full bg-black transition-all duration-1500 ease-in-out relative"></div>
+        <!-- Loading overlay -->
+        <div class="absolute inset-0 flex items-center justify-center bg-transparent z-10 hidden" aria-hidden="true">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+	    <div class="expertise-item space-y-2" data-percent="88" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+      <div class="flex items-center justify-between">
+        <span class="text-gray-800 font-medium">Cloud Technologies</span>
+        <div class="flex items-center space-x-2 text-sm text-gray-600">
+          <span>8+ years</span>
+          <span>•</span>
+          <span>88%</span>
+        </div>
+      </div>
+      <div class="relative w-full overflow-hidden rounded-full bg-blue-100 h-2" aria-valuenow="88" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div class="w-0 h-full bg-black transition-all duration-1500 ease-in-out relative"></div>
+        <!-- Loading overlay -->
+        <div class="absolute inset-0 flex items-center justify-center bg-transparent z-10 hidden" aria-hidden="true">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+	    <div class="expertise-item space-y-2" data-percent="94" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100">
+      <div class="flex items-center justify-between">
+        <span class="text-gray-800 font-medium">Infrastructure Management</span>
+        <div class="flex items-center space-x-2 text-sm text-gray-600">
+          <span>19+ years</span>
+          <span>•</span>
+          <span>94%</span>
+        </div>
+      </div>
+      <div class="relative w-full overflow-hidden rounded-full bg-blue-100 h-2" aria-valuenow="94" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div class="w-0 h-full bg-black transition-all duration-1500 ease-in-out relative"></div>
+        <!-- Loading overlay -->
+        <div class="absolute inset-0 flex items-center justify-center bg-transparent z-10 hidden" aria-hidden="true">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+	    <div class="expertise-item space-y-2" data-percent="90" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+      <div class="flex items-center justify-between">
+        <span class="text-gray-800 font-medium">Stakeholder Management</span>
+        <div class="flex items-center space-x-2 text-sm text-gray-600">
+          <span>12+ years</span>
+          <span>•</span>
+          <span>90%</span>
+        </div>
+      </div>
+      <div class="relative w-full overflow-hidden rounded-full bg-blue-100 h-2" aria-valuenow="90" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div class="w-0 h-full bg-black transition-all duration-1500 ease-in-out relative"></div>
+        <!-- Loading overlay -->
+        <div class="absolute inset-0 flex items-center justify-center bg-transparent z-10 hidden" aria-hidden="true">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+	    <div class="expertise-item space-y-2" data-percent="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+      <div class="flex items-center justify-between">
+        <span class="text-gray-800 font-medium">Risk Management</span>
+        <div class="flex items-center space-x-2 text-sm text-gray-600">
+          <span>10+ years</span>
+          <span>•</span>
+          <span>85%</span>
+        </div>
+      </div>
+      <div class="relative w-full overflow-hidden rounded-full bg-blue-100 h-2" aria-valuenow="85" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div class="w-0 h-full bg-black transition-all duration-1500 ease-in-out relative"></div>
+        <!-- Loading overlay -->
+        <div class="absolute inset-0 flex items-center justify-center bg-transparent z-10 hidden" aria-hidden="true">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+	    <div class="expertise-item space-y-2" data-percent="91" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100">
+      <div class="flex items-center justify-between">
+        <span class="text-gray-800 font-medium">Service Management (ITIL)</span>
+        <div class="flex items-center space-x-2 text-sm text-gray-600">
+          <span>12+ years</span>
+          <span>•</span>
+          <span>91%</span>
+        </div>
+      </div>
+      <div class="relative w-full overflow-hidden rounded-full bg-blue-100 h-2" aria-valuenow="91" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div class="w-0 h-full bg-black transition-all duration-1500 ease-in-out relative"></div>
+        <!-- Loading overlay -->
+        <div class="absolute inset-0 flex items-center justify-center bg-transparent z-10 hidden" aria-hidden="true">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+	    <div class="expertise-item space-y-2" data-percent="82" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+      <div class="flex items-center justify-between">
+        <span class="text-gray-800 font-medium">DevOps Practices</span>
+        <div class="flex items-center space-x-2 text-sm text-gray-600">
+          <span>6+ years</span>
+          <span>•</span>
+          <span>82%</span>
+        </div>
+      </div>
+      <div class="relative w-full overflow-hidden rounded-full bg-blue-100 h-2" aria-valuenow="82" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div class="w-0 h-full bg-black transition-all duration-1500 ease-in-out relative"></div>
+        <!-- Loading overlay -->
+        <div class="absolute inset-0 flex items-center justify-center bg-transparent z-10 hidden" aria-hidden="true">
+          <div class="spinner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		 </div>
+      </div>
+      
+      <!-- Key Skills Icons -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Leadership -->
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-700 rounded-full mb-4">
+            <!-- SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-6 h-6" aria-hidden="true">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold text-gray-900 mb-2">Leadership</h4>
+          <p class="text-gray-600 text-sm">Cross-functional team management and stakeholder engagement</p>
+        </div>
+        <!-- Technical -->
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-12 h-12 bg-green-100 text-green-700 rounded-full mb-4">
+            <!-- SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings w-6 h-6" aria-hidden="true">
+              <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold text-gray-900 mb-2">Technical</h4>
+          <p class="text-gray-600 text-sm">Deep expertise in cloud, infrastructure, and enterprise systems</p>
+        </div>
+        <!-- Strategic -->
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-12 h-12 bg-orange-100 text-orange-700 rounded-full mb-4">
+            <!-- SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-6 h-6" aria-hidden="true">
+              <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
+              <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path>
+              <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
+              <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
+              <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
+              <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
+              <path d="M19.938 10.5a4 4 0 0 1 .585.396"></path>
+              <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
+              <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold text-gray-900 mb-2">Strategic</h4>
+          <p class="text-gray-600 text-sm">Alignment of IT initiatives with business objectives</p>
+        </div>
+        <!-- Innovation -->
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-12 h-12 bg-purple-100 text-purple-700 rounded-full mb-4">
+            <!-- SVG icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-6 h-6" aria-hidden="true">
+              <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
+              <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path>
+              <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
+              <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
+              <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
+              <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
+              <path d="M19.938 10.5a4 4 0 0 1 .585.396"></path>
+              <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
+              <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold text-gray-900 mb-2">Innovation</h4>
+          <p class="text-gray-600 text-sm">Continuous improvement and adoption of emerging technologies</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications" class="py-20 lg:py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="transition-all duration-1000 opacity-100 translate-y-0">
+      
+      <!-- Header Section -->
+      <div class="text-center mb-16 lg:mb-20">
+        <h2 class="text-3xl lg:text-5xl font-light text-gray-900 mb-6 tracking-tight">
+          Professional Certifications
+        </h2>
+        <p class="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          Industry-recognized certifications that validate expertise in project management, cloud technologies, and IT service management best practices.
+        </p>
+      </div>
+      
+      <!-- Certifications Grid -->
+      <div class="grid lg:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Certification Category: Project Management -->
+        <div class="space-y-6">
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 bg-blue-100 text-blue-700">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award w-8 h-8" aria-hidden="true">
+                <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                <circle cx="12" cy="8" r="6"></circle>
+              </svg>
+            </div>
+            <h3 class="text-xl lg:text-2xl font-normal text-gray-900">Project Management</h3>
+          </div>
+          
+          <!-- PMP Certification -->
+          <div class="space-y-4">
+            <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div class="flex-1">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-gray-800">Project Management Professional (PMP®)</h4>
+                    <p class="text-gray-600 font-medium">PMI</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" aria-hidden="true">
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  </svg>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-2" aria-hidden="true">
+                      <path d="M8 2v4"></path>
+                      <path d="M16 2v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </svg>
+                    2018
+                  </div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-gray-300 text-gray-600">
+                    PMP-12345678
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- CSM Certification -->
+            <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div class="flex-1">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-gray-800">Certified ScrumMaster (CSM)</h4>
+                    <p class="text-gray-600 font-medium">Scrum Alliance</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" aria-hidden="true">
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  </svg>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-2" aria-hidden="true">
+                      <path d="M8 2v4"></path>
+                      <path d="M16 2v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </svg>
+                    2019
+                  </div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-gray-300 text-gray-600">
+                    CSM-87654321
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- CSPO Certification -->
+            <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div class="flex-1">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-gray-800">Certified Product Owner (CSPO)</h4>
+                    <p class="text-gray-600 font-medium">Scrum Alliance</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" aria-hidden="true">
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  </svg>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-2" aria-hidden="true">
+                      <path d="M8 2v4"></path>
+                      <path d="M16 2v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </svg>
+                    2020
+                  </div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-gray-300 text-gray-600">
+                    CSPO-11223344
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SAFe Agilist -->
+            <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div class="flex-1">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-gray-800">SAFe Agilist</h4>
+                    <p class="text-gray-600 font-medium">Scaled Agile</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" aria-hidden="true">
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  </svg>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-2" aria-hidden="true">
+                      <path d="M8 2v4"></path>
+                      <path d="M16 2v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </svg>
+                    2021
+                  </div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-gray-300 text-gray-600">
+                    SA-55667788
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Certification Category: Cloud & Technology -->
+        <div class="space-y-6">
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 bg-green-100 text-green-700">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-8 h-8" aria-hidden="true">
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl lg:text-2xl font-normal text-gray-900">Cloud &amp; Technology</h3>
+          </div>
+          <!-- Azure Fundamentals -->
+          <div class="space-y-4">
+            <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div class="flex-1">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-gray-800">Microsoft Azure Fundamentals (AZ-900)</h4>
+                    <p class="text-gray-600 font-medium">Microsoft</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" aria-hidden="true">
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  </svg>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-2" aria-hidden="true">
+                      <path d="M8 2v4"></path>
+                      <path d="M16 2v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </svg>
+                    2022
+                  </div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-gray-300 bg-gray-100 text-gray-600">
+                    AZ900-99887766
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- VMware Certified Professional -->
+            <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div class="flex-1">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-gray-800">VMware Certified Professional</h4>
+                    <p class="text-gray-600 font-medium">VMware</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" aria-hidden="true">
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  </svg>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-2" aria-hidden="true">
+                      <path d="M8 2v4"></path>
+                      <path d="M16 2v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </svg>
+                    2019
+                  </div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-gray-300 text-gray-600">
+                    VCP-33445566
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Certification Category: Service Management -->
+        <div class="space-y-6">
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 bg-purple-100 text-purple-700">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-8 h-8" aria-hidden="true">
+                <path d="M15 3h6v6"></path>
+                <path d="M10 14 21 3"></path>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl lg:text-2xl font-normal text-gray-900">Service Management</h3>
+          </div>
+          <!-- ITIL V2 Foundation -->
+          <div class="space-y-4">
+            <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div class="flex-1">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-gray-800">ITIL V2 Foundation</h4>
+                    <p class="text-gray-600 font-medium">AXELOS</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" aria-hidden="true">
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  </svg>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-2" aria-hidden="true">
+                      <path d="M8 2v4"></path>
+                      <path d="M16 2v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </svg>
+                    2017
+                  </div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-gray-300 text-gray-600">
+                    ITIL-44556677
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+      <!-- Complete Certification Portfolio -->
+      <div class="bg-gray-50 rounded-2xl p-8 lg:p-12">
+        <h3 class="text-2xl lg:text-3xl font-light text-gray-900 mb-8 tracking-tight text-center">Complete Certification Portfolio</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"> 
+          <!-- Certification Item 1 -->
+          <div class="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+            <div class="flex items-start space-x-4">
+              <div class="p-2 bg-gray-100 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award w-5 h-5 text-gray-700" aria-hidden="true">
+                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                  <circle cx="12" cy="8" r="6"></circle>
+                </svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Project Management Professional (PMP®)</h4>
+                <p class="text-sm text-gray-600 mb-2">PMI</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500">2018</span>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-secondary/80 text-xs bg-gray-100 text-gray-600">Active</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Certification Item 2 -->
+          <div class="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+            <div class="flex items-start space-x-4">
+              <div class="p-2 bg-gray-100 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award w-5 h-5 text-gray-700" aria-hidden="true">
+                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                  <circle cx="12" cy="8" r="6"></circle>
+                </svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Certified ScrumMaster (CSM)</h4>
+                <p class="text-sm text-gray-600 mb-2">Scrum Alliance</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500">2019</span>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-secondary/80 text-xs bg-gray-100 text-gray-600">Active</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Certification Item 3 -->
+          <div class="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+            <div class="flex items-start space-x-4">
+              <div class="p-2 bg-gray-100 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award w-5 h-5 text-gray-700" aria-hidden="true">
+                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                  <circle cx="12" cy="8" r="6"></circle>
+                </svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">Microsoft Azure Fundamentals (AZ-900)</h4>
+                <p class="text-sm text-gray-600 mb-2">Microsoft</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500">2022</span>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-secondary/80 text-xs bg-gray-100 text-gray-600">Active</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Certification Item 4 -->
+          <div class="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+            <div class="flex items-start space-x-4">
+              <div class="p-2 bg-gray-100 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award w-5 h-5 text-gray-700" aria-hidden="true">
+                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                  <circle cx="12" cy="8" r="6"></circle>
+                </svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">ITIL V2 Foundation</h4>
+                <p class="text-sm text-gray-600 mb-2">AXELOS</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500">2017</span>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-secondary/80 text-xs bg-gray-100 text-gray-600">Active</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Certification Item 5 -->
+          <div class="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+            <div class="flex items-start space-x-4">
+              <div class="p-2 bg-gray-100 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award w-5 h-5 text-gray-700" aria-hidden="true">
+                  <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                  <circle cx="12" cy="8" r="6"></circle>
+                </svg>
+              </div>
+              <div class="flex-1 min-w-0">
+                <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">VMware Certified Professional</h4>
+                <p class="text-sm text-gray-600 mb-2">VMware</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs text-gray-500">2019</span>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-secondary/80 text-xs bg-gray-100 text-gray-600">Active</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Summary Stats -->
+        <div class="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">7+</div>
+            <div class="text-sm lg:text-base text-gray-600">Active Certifications</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">3</div>
+            <div class="text-sm lg:text-base text-gray-600">Major Domains</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">2022</div>
+            <div class="text-sm lg:text-base text-gray-600">Latest Certification</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl lg:text-4xl font-light text-gray-900 mb-2">100%</div>
+            <div class="text-sm lg:text-base text-gray-600">Maintained</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="py-20 lg:py-32 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="transition-all duration-1000 opacity-100 translate-y-0">
+      <!-- Header Section -->
+      <div class="text-center mb-16 lg:mb-20">
+        <h2 class="text-3xl lg:text-5xl font-light text-gray-900 mb-6 tracking-tight">
+          Let's Discuss Your Next Project
+        </h2>
+        <p class="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          Ready to transform your IT infrastructure and drive organizational success? I'm available for senior leadership roles and strategic consulting opportunities.
+        </p>
+      </div>
+      <!-- Main Content Grid -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20">
+        <!-- Contact Form -->
+        <div class="rounded-xl border bg-card text-card-foreground border-gray-200 shadow-sm">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="tracking-tight text-2xl lg:text-3xl font-light text-gray-900 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square w-8 h-8 mr-3 text-gray-700" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              Send a Message
+            </div>
+            <p class="text-gray-600">I typically respond within 24 hours during business days.</p>
+          </div>
+          <div class="p-6 pt-0">
+            <form class="space-y-6">
+              <!-- Name and Email -->
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                  <input class="flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm border-gray-300 focus:border-gray-900 focus:ring-gray-900" id="name" required placeholder="Your full name" type="text" name="name" value="">
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                  <input class="flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm border-gray-300 focus:border-gray-900 focus:ring-gray-900" id="email" required placeholder="your.email@company.com" type="email" name="email" value="">
+                </div>
+              </div>
+              <!-- Company and Role -->
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                  <input class="flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm border-gray-300 focus:border-gray-900 focus:ring-gray-900" id="company" placeholder="Your company name" type="text" name="company" value="">
+                </div>
+                <div>
+                  <label for="role" class="block text-sm font-medium text-gray-700 mb-2">Your Role</label>
+                  <input class="flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm border-gray-300 focus:border-gray-900 focus:ring-gray-900" id="role" placeholder="Your job title" type="text" name="role" value="">
+                </div>
+              </div>
+              <!-- Message -->
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                <textarea class="flex min-h-[60px] w-full rounded-md border bg-transparent px-3 py-2 text-base shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm border-gray-300 focus:border-gray-900 focus:ring-gray-900" id="message" name="message" required rows="6" placeholder="Tell me about your project, opportunity, or how I can help your organization..."></textarea>
+              </div>
+              <!-- Submit Button -->
+              <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 px-4 w-full bg-gray-900 text-white hover:bg-gray-800 py-3 text-lg font-medium" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send w-5 h-5 mr-2" aria-hidden="true">
+                  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.110z"></path>
+                  <path d="m21.854 2.147-10.94 10.939"></path>
+                </svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Contact Details & Quick Actions -->
+        <div class="space-y-8">
+          <!-- Direct Contact -->
+          <div>
+            <h3 class="text-2xl lg:text-3xl font-light text-gray-900 mb-6 tracking-tight">Direct Contact</h3>
+            <div class="space-y-6">
+              <!-- Email -->
+              <div class="flex items-start space-x-4">
+                <div class="p-3 bg-white rounded-lg shadow-sm border border-gray-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-6 h-6 text-gray-700" aria-hidden="true">
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-900 mb-1">Email</p>
+                  <a href="mailto:madhu.ms@email.com" class="text-gray-600 hover:text-gray-900 transition-colors">madhu.ms@email.com</a>
+                </div>
+              </div>
+              <!-- Phone -->
+              <div class="flex items-start space-x-4">
+                <div class="p-3 bg-white rounded-lg shadow-sm border border-gray-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-6 h-6 text-gray-700" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-900 mb-1">Phone</p>
+                  <a href="tel:+1 (555) 123-4567" class="text-gray-600 hover:text-gray-900 transition-colors">+1 (555) 123-4567</a>
+                </div>
+              </div>
+              <!-- Location -->
+              <div class="flex items-start space-x-4">
+                <div class="p-3 bg-white rounded-lg shadow-sm border border-gray-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-6 h-6 text-gray-700" aria-hidden="true">
+                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-900 mb-1">Location</p>
+                  <p class="text-gray-600">Bangalore, India</p>
+                </div>
+              </div>
+              <!-- LinkedIn -->
+              <div class="flex items-start space-x-4">
+                <div class="p-3 bg-white rounded-lg shadow-sm border border-gray-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-6 h-6 text-gray-700" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm font-medium text-gray-900 mb-1">LinkedIn</p>
+                  <a href="https://linkedin.com/in/madhums" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors">Connect on LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>   
+          <!-- Current Availability -->
+          <div class="rounded-xl border text-card-foreground border-gray-200 shadow-sm bg-white">
+            <div class="p-6">
+              <div class="flex items-start space-x-4">
+                <div class="p-3 bg-green-100 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-6 h-6 text-green-700" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-900 mb-2">Current Availability</h4>
+                  <div class="space-y-2 text-gray-600">
+                    <p class="flex items-center"><span class="w-3 h-3 bg-green-500 rounded-full mr-3 animate-pulse"></span>Available for senior leadership roles</p>
+                    <p class="flex items-center"><span class="w-3 h-3 bg-blue-500 rounded-full mr-3"></span>Open to strategic consulting</p>
+                    <p class="flex items-center"><span class="w-3 h-3 bg-purple-500 rounded-full mr-3"></span>Interested in board positions</p>
+                  </div>
+                  <p class="text-sm text-gray-500 mt-3">Response time: Within 24 hours on business days</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Quick Actions -->
+          <div class="space-y-4">
+            <h4 class="text-lg font-semibold text-gray-900">Quick Actions</h4>
+            <div class="grid gap-3">
+              <!-- Connect on LinkedIn -->
+              <button class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border shadow-sm hover:text-accent-foreground h-9 px-4 py-2 justify-start border-gray-300 text-gray-700 hover:bg-gray-50">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5 mr-3" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                Connect on LinkedIn
+              </button>
+              <!-- Send Direct Email -->
+              <button class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border shadow-sm hover:text-accent-foreground h-9 px-4 py-2 justify-start border-gray-300 text-gray-700 hover:bg-gray-50">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5 mr-3" aria-hidden="true">
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                </svg>
+                Send Direct Email
+              </button>
+              <!-- Schedule a Call -->
+              <button class="inline-flex items-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border shadow-sm hover:text-accent-foreground h-9 px-4 py-2 justify-start border-gray-300 text-gray-700 hover:bg-gray-50">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-5 h-5 mr-3" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                Schedule a Call
+              </button>
+            </div>
+          </div>
+        </div> <!-- End of space-y-8 -->
+      </div> <!-- End of grid -->
+    </div> <!-- End of transition wrapper -->
+  </div>
+</section>	
+<footer class="bg-gray-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="py-12 lg:py-16">
+      <div class="grid lg:grid-cols-4 gap-8 lg:gap-12">
+        <!-- About Section -->
+        <div class="lg:col-span-2 space-y-6">
+          <div>
+            <h3 class="text-2xl lg:text-3xl font-light tracking-tight mb-4">Madhu M S</h3>
+            <p class="text-gray-300 leading-relaxed max-w-md">
+              Senior IT Infrastructure &amp; Project Manager with 19+ years of proven leadership in enterprise-scale technology initiatives and team management.
+            </p>
+          </div>        
+          <!-- Contact Info -->
+          <div class="space-y-3">
+            <div class="flex items-center text-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 mr-3 flex-shrink-0" aria-hidden="true">
+                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="text-sm">Bangalore, India</span>
+            </div>
+            <div class="flex items-center text-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-4 h-4 mr-3 flex-shrink-0" aria-hidden="true">
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              </svg>
+              <a href="mailto:madhu.ms@email.com" class="text-sm hover:text-white transition-colors">madhu.ms@email.com</a>
+            </div>
+            <div class="flex items-center text-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4 mr-3 flex-shrink-0" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+1 (555) 123-4567" class="text-sm hover:text-white transition-colors">+1 (555) 123-4567</a>
+            </div>
+          </div>         
+          <!-- Social Links -->
+          <div class="flex space-x-4">
+            <a href="https://linkedin.com/in/madhums" target="_blank" rel="noopener noreferrer" class="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="mailto:madhu.ms@email.com" class="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5" aria-hidden="true">
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              </svg>
+            </a>
+          </div>
+        </div>       
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><button class="text-gray-300 hover:text-white transition-colors text-sm">Home</button></li>
+            <li><button class="text-gray-300 hover:text-white transition-colors text-sm">About</button></li>
+            <li><button class="text-gray-300 hover:text-white transition-colors text-sm">Experience</button></li>
+            <li><button class="text-gray-300 hover:text-white transition-colors text-sm">Projects</button></li>
+            <li><button class="text-gray-300 hover:text-white transition-colors text-sm">Skills</button></li>
+            <li><button class="text-gray-300 hover:text-white transition-colors text-sm">Certifications</button></li>
+            <li><button class="text-gray-300 hover:text-white transition-colors text-sm">Contact</button></li>
+          </ul>
+        </div>       
+        <!-- Professional Focus -->
+        <div>
+          <h4 class="text-lg font-semibold mb-6">Professional Focus</h4>
+          <ul class="space-y-3">
+            <li class="text-gray-300 text-sm">IT Project Management</li>
+            <li class="text-gray-300 text-sm">Cloud Infrastructure</li>
+            <li class="text-gray-300 text-sm">Team Leadership</li>
+            <li class="text-gray-300 text-sm">Digital Transformation</li>
+            <li class="text-gray-300 text-sm">Service Management</li>
+            <li class="text-gray-300 text-sm">Stakeholder Engagement</li>
+          </ul>
+        </div>
+      </div>   
+      <!-- Divider -->
+      <div data-orientation="horizontal" role="none" class="shrink-0 h-[1px] w-full bg-gray-800 my-8"></div>    
+      <!-- Bottom Bar -->
+      <div class="py-8">
+        <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+          <!-- Copyright -->
+          <div class="flex items-center space-x-6 text-sm text-gray-400">
+            <p>© 2025 Madhu M S. All rights reserved.</p>
+            <div class="hidden md:flex items-center space-x-2">
+              <span>Maintained by Vishal M M</span>
+            </div>
+          </div>         
+          <!-- Leadership Role -->
+          <div class="flex items-center space-x-6 text-sm text-gray-400">
+            <span>Available for Senior Leadership Roles</span>
+            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const expertiseItems = document.querySelectorAll('.expertise-item');
+
+    expertiseItems.forEach(item => {
+      const percent = parseInt(item.getAttribute('data-percent'));
+      const progressBar = item.querySelector('div.w-0');
+      const overlay = progressBar.nextElementSibling;
+
+      // Show spinner before animation
+      overlay.classList.remove('hidden');
+
+      // Animate progress
+      const widthPercent = percent + '%';
+      const animation = progressBar.animate(
+        [{ width: '0%' }, { width: widthPercent }],
+        {
+          duration: 1500,
+          easing: 'ease-in-out',
+          fill: 'forwards'
+        }
+      );
+
+      // When animation ends, set final width and hide spinner
+      animation.onfinish = () => {
+        progressBar.style.width = widthPercent;
+        overlay.classList.add('hidden');
+      };
+    });
+  });
+</script>
+</body>
+</html>
