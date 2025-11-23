@@ -7,7 +7,7 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="pt-20"> <!-- padding top to avoid overlap with fixed header -->
+<body class="pt-20" oncontextmenu="return false;"> <!-- padding top to avoid overlap with fixed header -->
   <!-- Header -->
   <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,13 +18,13 @@
         </button>
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center space-x-8">
-          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Home</button>
-          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">About</button>
-          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Experience</button>
-          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Projects</button>
-          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Skills</button>
-          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Certifications</button>
-          <button class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-900 font-medium">Contact</button>
+          <button onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' });" class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Home</button>
+          <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });" class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">About</button>
+          <button onclick="document.getElementById('experience').scrollIntoView({ behavior: 'smooth' });" class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Experience</button>
+          <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });" class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Projects</button>
+          <button onclick="document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });" class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Skills</button>
+          <button onclick="document.getElementById('certifications').scrollIntoView({ behavior: 'smooth' });" class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-600 hover:text-gray-900">Certifications</button>
+          <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });" class="text-sm font-normal tracking-wide transition-all duration-200 hover:-translate-y-0.5 text-gray-900 font-medium">Contact</button>
         </nav>
         <!-- Action Buttons -->
         <div class="hidden lg:flex items-center space-x-4">
@@ -860,7 +860,7 @@
               <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">Agile &amp; Scrum</div>
               <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">SAFe Framework</div>
               <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">Waterfall</div>
-              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">ITIL V2</div>
+              <div class="inline-flex items-center rounded-md px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-secondary/80 bg-white text-gray-700 border border-gray-200 text-xs">ITIL V3</div>
               <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-secondary/80 bg-gray-100 text-gray-600 text-xs">+3 more</div>
             </div>
           </div>
@@ -1388,14 +1388,14 @@
             </div>
             <h3 class="text-xl lg:text-2xl font-normal text-gray-900">Service Management</h3>
           </div>
-          <!-- ITIL V2 Foundation -->
+          <!-- ITIL V3 Foundation -->
           <div class="space-y-4">
             <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div class="p-6">
                 <div class="flex items-start justify-between mb-3">
                   <div class="flex-1">
-                    <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-gray-800">ITIL V2 Foundation</h4>
-                    <p class="text-gray-600 font-medium">AXELOS</p>
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-gray-800">ITIL V3 Foundation</h4>
+                    <p class="text-gray-600 font-medium">EXIN</p>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" aria-hidden="true">
                     <path d="M15 3h6v6"></path>
@@ -1412,6 +1412,35 @@
                       <path d="M3 10h18"></path>
                     </svg>
                     2017
+                  </div>
+                  <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-gray-300 text-gray-600">
+                    ITIL-44556677
+                  </div>
+                </div>
+              </div>
+            </div>
+			  <div class="rounded-xl border bg-card text-card-foreground shadow group border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div class="p-6">
+                <div class="flex items-start justify-between mb-3">
+                  <div class="flex-1">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-gray-800">Generative AI Mastermind</h4>
+                    <p class="text-gray-600 font-medium">Outskill</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" aria-hidden="true">
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  </svg>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-sm text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4 mr-2" aria-hidden="true">
+                      <path d="M8 2v4"></path>
+                      <path d="M16 2v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </svg>
+                    2025
                   </div>
                   <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-xs border-gray-300 text-gray-600">
                     ITIL-44556677
@@ -1493,8 +1522,8 @@
                 </svg>
               </div>
               <div class="flex-1 min-w-0">
-                <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">ITIL V2 Foundation</h4>
-                <p class="text-sm text-gray-600 mb-2">AXELOS</p>
+                <h4 class="text-base font-semibold text-gray-900 mb-1 truncate">ITIL V3 Foundation</h4>
+                <p class="text-sm text-gray-600 mb-2">EXIN</p>
                 <div class="flex items-center justify-between">
                   <span class="text-xs text-gray-500">2017</span>
                   <div class="inline-flex items-center rounded-md border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-secondary/80 text-xs bg-gray-100 text-gray-600">Active</div>
