@@ -9,7 +9,7 @@
 </head>
 <body class="pt-20" oncontextmenu="return false;"> <!-- padding top to avoid overlap with fixed header -->
   <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background-color: #f5f5dc; backdrop-filter: blur(8px); shadow: 0 4px 6px rgba(0,0,0,0.1); border-bottom: 1px solid #e5e7eb;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 lg:h-20">
         <!-- Logo / Title Button -->
@@ -36,7 +36,7 @@
             </svg>
             Resume
           </button>
-          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus:outline-none focus:ring-1 focus:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:shrink-0 shadow h-8 rounded-md px-3 text-xs bg-gray-900 text-white hover:bg-gray-800">
+          <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus:outline-none focus:ring-1 focus:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:shrink-0 shadow h-8 rounded-md px-3 text-xs bg-gray-900 text-white hover:bg-gray-800">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
               <rect x="2" y="4" width="20" height="16" rx="2"></rect>
@@ -57,7 +57,7 @@
   </header>
 
   <!-- Home Section -->
-  <section class="min-h-screen bg-gradient-to-br from-gray-50 to-white relative overflow-hidden" id="home">
+<section class="min-h-screen bg-gradient-to-br from-gray-50 via-gray-200 to-charcoal-gray relative overflow-hidden" id="home">
     <div class="absolute inset-0 opacity-5">
       <div class="absolute top-20 left-20 w-96 h-96 bg-gray-900 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
       <div class="absolute top-40 right-20 w-96 h-96 bg-gray-700 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-1000"></div>
@@ -137,8 +137,8 @@
           <div class="pt-8">
             <p class="text-sm text-gray-500 mb-4">TARGET ROLES</p>
             <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">Infrastructure Director / Manager</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">Service Delivery Director / Manager</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">Infrastructure Manager</span>
+              <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">Service Delivery Manager</span>
               <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">Data Center Operations Manager</span>
               <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">IT Program Manager</span>
               <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">Cloud Solutions Manager / Cloud Infrastructure Lead</span>
@@ -186,7 +186,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-20 lg:py-32 bg-gray-50">
+<section id="about" class="py-20 lg:py-32 bg-gradient-to-b from-gray-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="transition-all duration-1000 opacity-100 translate-y-0">
         <div class="text-center mb-16 lg:mb-20">
